@@ -82,11 +82,22 @@
       gap: 30px;
       flex-wrap: wrap;
     }
+    .card {
+      width: 240px;
+    }
     .card img {
-      width: 220px;
-      height: auto;
+      width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card-details {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .card-details h3 {
+      font-size: 16px;
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -113,12 +124,24 @@
     <div class="cards">
       <div class="card">
         <img src="https://i.imgur.com/BhZ2zFZ.jpg" alt="Oasis Reunion 2025">
+        <div class="card-details">
+          <h3>OASIS LIVE '25</h3>
+          <p>Sun • Sep 07, 2025 • 7:30 PM<br>Rose Bowl, Pasadena, CA</p>
+        </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/1NqapK8.jpg" alt="Taylor Swift Era Tour">
+        <img src="https://i.imgur.com/1NqapK8.jpg" alt="Taylor Swift Experience">
+        <div class="card-details">
+          <h3>Fearless: The Taylor Swift Experience</h3>
+          <p>Sat • Mar 08, 2025 • 1:00 PM<br>Milford Theater, Milford, PA</p>
+        </div>
       </div>
       <div class="card">
-        <img src="https://i.imgur.com/9h09nLs.jpg" alt="Rod Wave Concert">
+        <img src="https://i.imgur.com/9h09nLs.jpg" alt="Rod Wave Tour">
+        <div class="card-details">
+          <h3>Rod Wave - Last Lap Tour</h3>
+          <p>Fri • Feb 14, 2025 • 7:00 PM<br>Barclays Center, Brooklyn, NY</p>
+        </div>
       </div>
     </div>
   </section>
