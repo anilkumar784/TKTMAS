@@ -16,11 +16,12 @@
       color: black;
       padding: 10px 20px;
       position: relative;
+      text-align: center;
     }
     header h1 {
-  margin: 0;
-  font-size: 18px;
-  text-align: center;
+      margin: 0;
+      font-size: 18px;
+      text-align: center;
     }
     .call-now {
       position: absolute;
@@ -101,6 +102,41 @@
       font-size: 16px;
       margin: 5px 0;
     }
+
+    /* Early Check In Section */
+    .early-checkin {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .early-checkin h2 {
+      font-size: 28px;
+      color: #5e1675;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .early-checkin h2::before,
+    .early-checkin h2::after {
+      content: "";
+      display: inline-block;
+      width: 60px;
+      height: 2px;
+      background: #d3a7d9;
+      margin: 0 15px;
+      vertical-align: middle;
+    }
+    .info-text, .disclaimer-text {
+      font-size: 14px;
+      max-width: 600px;
+      margin: 20px auto 0;
+    }
+    .info-text {
+      font-style: italic;
+      font-weight: 500;
+    }
+    .disclaimer-text {
+      font-style: italic;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -146,6 +182,35 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="early-checkin">
+    <h2>Early Check In</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="oasis2.png" alt="Oasis Reunion 2025">
+        <div class="card-details">
+          <h3>OASIS LIVE '25</h3>
+          <p>Sun • Sep 07, 2025 • 7:30 PM<br>Rose Bowl, Pasadena, CA</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="taylor2.png" alt="Taylor Swift Experience">
+        <div class="card-details">
+          <h3>Fearless: The Taylor Swift Experience</h3>
+          <p>Sat • Mar 08, 2025 • 1:00 PM<br>Milford Theater, Milford, PA</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="rod2.png" alt="Rod Wave Tour">
+        <div class="card-details">
+          <h3>Rod Wave - Last Lap Tour</h3>
+          <p>Fri • Feb 14, 2025 • 7:00 PM<br>Barclays Center, Brooklyn, NY</p>
+        </div>
+      </div>
+    </div>
+    <p class="info-text"><em>For More Info- Contact Customer Service- +1(855)-205-2349</em></p>
+    <p class="disclaimer-text"><em>Disclaimer</em>- Ticketmaster Guide Info is a third party company. We suggest you the best ticket deals around the globe. We don't sell tickets.</p>
   </section>
 
 </body>
