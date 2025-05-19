@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ticketmaster Guide Info</title>
   <style>
     body {
@@ -11,6 +11,7 @@
       background: #fff;
       color: #000;
     }
+
     header {
       background-color: #2196f3;
       color: black;
@@ -18,11 +19,13 @@
       position: relative;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
     }
+
     .call-now {
       position: absolute;
       top: 10px;
@@ -32,29 +35,34 @@
       padding: 10px 15px;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 4px;
     }
+
     .sub-header {
       background: #2196f3;
-      padding: 5px 20px;
+      padding: 8px 20px;
       font-weight: bold;
       text-align: center;
     }
+
     .hero {
       background: url('tkt.png') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 60px 20px;
-      position: relative;
     }
+
     .hero h2 {
-      font-size: 32px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
+
     .hero p {
       max-width: 700px;
       margin: 0 auto 20px;
       font-size: 16px;
     }
+
     .contact-btn {
       background-color: #a274a3;
       color: white;
@@ -64,56 +72,28 @@
       border-radius: 5px;
       display: inline-block;
     }
+
     .disclaimer {
       font-size: 12px;
       font-style: italic;
       color: #fff;
       margin-top: 20px;
     }
-    .vip-access {
+
+    .vip-access,
+    .early-checkin {
       text-align: center;
       padding: 40px 20px;
     }
-    .vip-access h2 {
-      font-size: 28px;
-      color: #5e1675;
-      margin-bottom: 30px;
-    }
-    .cards {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .card {
-      width: 240px;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    .card-details {
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    .card-details h3 {
-      font-size: 16px;
-      margin: 5px 0;
-    }
 
-    /* Early Check In Section */
-    .early-checkin {
-      text-align: center;
-      padding: 50px 20px;
-    }
+    .vip-access h2,
     .early-checkin h2 {
       font-size: 28px;
       color: #5e1675;
       margin-bottom: 30px;
       position: relative;
     }
+
     .early-checkin h2::before,
     .early-checkin h2::after {
       content: "";
@@ -124,18 +104,97 @@
       margin: 0 15px;
       vertical-align: middle;
     }
-    .info-text, .disclaimer-text {
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .card {
+      width: 280px;
+      flex: 1 1 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-details {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .card-details h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .info-text,
+    .disclaimer-text {
       font-size: 14px;
       max-width: 600px;
       margin: 20px auto 0;
     }
+
     .info-text {
       font-style: italic;
       font-weight: 500;
     }
+
     .disclaimer-text {
       font-style: italic;
       margin-top: 10px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 16px;
+      }
+
+      .call-now {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .vip-access h2,
+      .early-checkin h2 {
+        font-size: 22px;
+      }
+
+      .card {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+
+      .card-details h3 {
+        font-size: 15px;
+      }
+
+      .contact-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+      }
+
+      .info-text,
+      .disclaimer-text {
+        font-size: 13px;
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
